@@ -1,6 +1,6 @@
 ﻿
  USE QuanLyQuanCafe
- GO
+ go
  -- Food
  -- Table
  -- FoodCategory
