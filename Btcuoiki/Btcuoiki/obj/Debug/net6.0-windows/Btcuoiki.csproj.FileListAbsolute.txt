@@ -4,7 +4,6 @@ C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\bin\Debug\net6.0-windows\Btcuoiki.r
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\bin\Debug\net6.0-windows\Btcuoiki.dll
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\bin\Debug\net6.0-windows\Btcuoiki.pdb
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.csproj.AssemblyReference.cache
-C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.Login.resources
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.csproj.GenerateResource.cache
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.AssemblyInfoInputs.cache
@@ -15,3 +14,8 @@ C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\refint\Btc
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.pdb
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.genruntimeconfig.cache
 C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\ref\Btcuoiki.dll
+C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.frmLogin.resources
+C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.frmAccountProfile.resources
+C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.frmtableManager.resources
+C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.frmAdmin.resources
+C:\Users\acer\source\repos\Btcuoiki\Btcuoiki\obj\Debug\net6.0-windows\Btcuoiki.frmRegist.resources
