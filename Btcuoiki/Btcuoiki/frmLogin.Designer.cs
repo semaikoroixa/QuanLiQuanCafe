@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             panel2 = new Panel();
-            textBox2 = new TextBox();
+            txtPassWord = new TextBox();
             label1 = new Label();
-            button1 = new Button();
+            btnThoat = new Button();
             panel1 = new Panel();
-            textBox1 = new TextBox();
+            txtUserName = new TextBox();
             label2 = new Label();
-            Btndangnhap = new Button();
-            btnDangki = new Button();
+            btnLogin = new Button();
+            btnDangKi = new Button();
+            btnDangNhap = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
             // 
-            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(txtPassWord);
             panel2.Controls.Add(label1);
             panel2.Location = new Point(12, 71);
             panel2.Name = "panel2";
@@ -51,13 +52,13 @@
             panel2.TabIndex = 0;
             panel2.Paint += panel1_Paint;
             // 
-            // textBox2
+            // txtPassWord
             // 
-            textBox2.Location = new Point(142, 9);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(269, 27);
-            textBox2.TabIndex = 1;
-            textBox2.TextChanged += textBox2_TextChanged;
+            txtPassWord.Location = new Point(142, 9);
+            txtPassWord.Name = "txtPassWord";
+            txtPassWord.Size = new Size(269, 27);
+            txtPassWord.TabIndex = 1;
+            txtPassWord.TextChanged += textBox2_TextChanged;
             // 
             // label1
             // 
@@ -71,21 +72,21 @@
             label1.Text = "Mật khẩu:";
             label1.Click += label1_Click;
             // 
-            // button1
+            // btnThoat
             // 
-            button1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.Purple;
-            button1.Location = new Point(343, 134);
-            button1.Name = "button1";
-            button1.Size = new Size(101, 61);
-            button1.TabIndex = 1;
-            button1.Text = "Thoát ";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnThoat.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnThoat.ForeColor = Color.Purple;
+            btnThoat.Location = new Point(343, 134);
+            btnThoat.Name = "btnThoat";
+            btnThoat.Size = new Size(101, 61);
+            btnThoat.TabIndex = 1;
+            btnThoat.Text = "Thoát ";
+            btnThoat.UseVisualStyleBackColor = true;
+            btnThoat.Click += button1_Click;
             // 
             // panel1
             // 
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtUserName);
             panel1.Controls.Add(label2);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
@@ -93,13 +94,13 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
-            // textBox1
+            // txtUserName
             // 
-            textBox1.Location = new Point(142, 13);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(269, 27);
-            textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox2_TextChanged;
+            txtUserName.Location = new Point(142, 13);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(269, 27);
+            txtUserName.TabIndex = 1;
+            txtUserName.TextChanged += textBox2_TextChanged;
             // 
             // label2
             // 
@@ -113,38 +114,49 @@
             label2.Text = "Tên đăng nhập:";
             label2.Click += label1_Click;
             // 
-            // Btndangnhap
+            // btnLogin
             // 
-            Btndangnhap.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            Btndangnhap.ForeColor = Color.Purple;
-            Btndangnhap.Location = new Point(129, 134);
-            Btndangnhap.Name = "Btndangnhap";
-            Btndangnhap.Size = new Size(101, 61);
-            Btndangnhap.TabIndex = 1;
-            Btndangnhap.Text = "Đăng nhập ";
-            Btndangnhap.UseVisualStyleBackColor = true;
-            Btndangnhap.Click += button2_Click;
+            btnLogin.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin.ForeColor = Color.Purple;
+            btnLogin.Location = new Point(129, 134);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(101, 61);
+            btnLogin.TabIndex = 1;
+            btnLogin.Text = "Đăng nhập ";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // btnDangki
+            // btnDangKi
             // 
-            btnDangki.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDangki.ForeColor = Color.Purple;
-            btnDangki.Location = new Point(236, 136);
-            btnDangki.Name = "btnDangki";
-            btnDangki.Size = new Size(101, 59);
-            btnDangki.TabIndex = 2;
-            btnDangki.Text = "Đăng kí";
-            btnDangki.UseVisualStyleBackColor = true;
-            btnDangki.Click += btnDangki_Click;
+            btnDangKi.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDangKi.ForeColor = Color.Purple;
+            btnDangKi.Location = new Point(236, 136);
+            btnDangKi.Name = "btnDangKi";
+            btnDangKi.Size = new Size(101, 59);
+            btnDangKi.TabIndex = 2;
+            btnDangKi.Text = "Đăng kí";
+            btnDangKi.UseVisualStyleBackColor = true;
+            btnDangKi.Click += btnDangki_Click;
+            // 
+            // btnDangNhap
+            // 
+            btnDangNhap.Location = new Point(15, 131);
+            btnDangNhap.Name = "btnDangNhap";
+            btnDangNhap.Size = new Size(95, 67);
+            btnDangNhap.TabIndex = 3;
+            btnDangNhap.Text = "button1";
+            btnDangNhap.UseVisualStyleBackColor = true;
+            btnDangNhap.Click += btnDangNhap_Click;
             // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(456, 207);
-            Controls.Add(btnDangki);
-            Controls.Add(Btndangnhap);
-            Controls.Add(button1);
+            Controls.Add(btnDangNhap);
+            Controls.Add(btnDangKi);
+            Controls.Add(btnLogin);
+            Controls.Add(btnThoat);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "frmLogin";
@@ -161,13 +173,14 @@
 
         #endregion
         private Panel panel2;
-        private TextBox textBox2;
+        private TextBox txtPassWord;
         private Label label1;
-        private Button button1;
+        private Button btnThoat;
         private Panel panel1;
-        private TextBox textBox1;
+        private TextBox txtUserName;
         private Label label2;
-        private Button Btndangnhap;
-        private Button btnDangki;
+        private Button btnLogin;
+        private Button btnDangKi;
+        private Button btnDangNhap;
     }
 }

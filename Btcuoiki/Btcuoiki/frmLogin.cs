@@ -1,4 +1,7 @@
-﻿namespace Btcuoiki
+﻿using Btcuoiki.DAO;
+using System.Diagnostics.Eventing.Reader;
+
+namespace Btcuoiki
 {
     public partial class frmLogin : Form
     {
@@ -44,19 +47,39 @@
                 e.Cancel = true;
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        //button2 la nut Login
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmtableManager f = new frmtableManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+
+        }
+
+        bool Login(string userName, string passWord)
+        {
+
+            return AccountDAO.Instance.Login(userName, passWord);
         }
 
         private void btnDangki_Click(object sender, EventArgs e)
         {
             frmRegist d = new frmRegist();
             d.ShowDialog();
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            string userName = txtUserName.Text;
+            string passWord = txtPassWord.Text;
+            if (Login(userName, passWord))
+            {
+                frmtableManager f = new frmtableManager();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+            }
         }
     }
 }

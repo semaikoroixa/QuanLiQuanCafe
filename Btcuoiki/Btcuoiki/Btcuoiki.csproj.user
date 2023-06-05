@@ -16,5 +16,8 @@
     <Compile Update="frmtableManager.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

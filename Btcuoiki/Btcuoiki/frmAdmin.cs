@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Btcuoiki.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,7 +17,19 @@ namespace Btcuoiki
         public frmAdmin()
         {
             InitializeComponent();
+            
         }
+        //void LoadAccountList()
+        //{
+        //    string query = " exec dbo.USP_GetAccountByUserName @userName";
+            
+        //    dgvAccount.DataSource = DataProvider.Instance.ExcuteQuery(query,new object[] {"Admin"});
+        //}
+
+   
+
+
+
 
         private void button2_Click(object sender, EventArgs e)
         {

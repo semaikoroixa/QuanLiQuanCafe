@@ -102,6 +102,7 @@
             tabPage2 = new TabPage();
             panel26 = new Panel();
             panel27 = new Panel();
+            btnResetpassword = new Button();
             panel28 = new Panel();
             comboBox1 = new ComboBox();
             label12 = new Label();
@@ -112,13 +113,12 @@
             txtUsername = new TextBox();
             label14 = new Label();
             panel31 = new Panel();
-            dataGridView4 = new DataGridView();
+            dgvAccount = new DataGridView();
             panel32 = new Panel();
             btnViewAcc = new Button();
             btnEditAcc = new Button();
             btnDeleteAcc = new Button();
             btnAddAcc = new Button();
-            btnResetpassword = new Button();
             tbpFood.SuspendLayout();
             panel4.SuspendLayout();
             panel8.SuspendLayout();
@@ -160,7 +160,7 @@
             panel29.SuspendLayout();
             panel30.SuspendLayout();
             panel31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAccount).BeginInit();
             panel32.SuspendLayout();
             SuspendLayout();
             // 
@@ -859,6 +859,16 @@
             panel27.Size = new Size(423, 547);
             panel27.TabIndex = 1;
             // 
+            // btnResetpassword
+            // 
+            btnResetpassword.Location = new Point(285, 218);
+            btnResetpassword.Name = "btnResetpassword";
+            btnResetpassword.Size = new Size(131, 29);
+            btnResetpassword.TabIndex = 2;
+            btnResetpassword.Text = "Đặt lại mật khẩu";
+            btnResetpassword.UseVisualStyleBackColor = true;
+            btnResetpassword.Click += btnResetpassword_Click_1;
+            // 
             // panel28
             // 
             panel28.Controls.Add(comboBox1);
@@ -943,21 +953,21 @@
             // 
             // panel31
             // 
-            panel31.Controls.Add(dataGridView4);
+            panel31.Controls.Add(dgvAccount);
             panel31.Location = new Point(3, 66);
             panel31.Name = "panel31";
             panel31.Size = new Size(406, 547);
             panel31.TabIndex = 1;
             // 
-            // dataGridView4
+            // dgvAccount
             // 
-            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView4.Location = new Point(3, 3);
-            dataGridView4.Name = "dataGridView4";
-            dataGridView4.RowHeadersWidth = 51;
-            dataGridView4.RowTemplate.Height = 29;
-            dataGridView4.Size = new Size(403, 541);
-            dataGridView4.TabIndex = 0;
+            dgvAccount.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvAccount.Location = new Point(3, 3);
+            dgvAccount.Name = "dgvAccount";
+            dgvAccount.RowHeadersWidth = 51;
+            dgvAccount.RowTemplate.Height = 29;
+            dgvAccount.Size = new Size(403, 541);
+            dgvAccount.TabIndex = 0;
             // 
             // panel32
             // 
@@ -1005,16 +1015,6 @@
             btnAddAcc.TabIndex = 0;
             btnAddAcc.Text = "Thêm";
             btnAddAcc.UseVisualStyleBackColor = true;
-            // 
-            // btnResetpassword
-            // 
-            btnResetpassword.Location = new Point(285, 218);
-            btnResetpassword.Name = "btnResetpassword";
-            btnResetpassword.Size = new Size(131, 29);
-            btnResetpassword.TabIndex = 2;
-            btnResetpassword.Text = "Đặt lại mật khẩu";
-            btnResetpassword.UseVisualStyleBackColor = true;
-            btnResetpassword.Click += btnResetpassword_Click_1;
             // 
             // frmAdmin
             // 
@@ -1080,7 +1080,7 @@
             panel30.ResumeLayout(false);
             panel30.PerformLayout();
             panel31.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvAccount).EndInit();
             panel32.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -1182,7 +1182,7 @@
         private TextBox txtUsername;
         private Label label14;
         private Panel panel31;
-        private DataGridView dataGridView4;
+        private DataGridView dgvAccount;
         private Panel panel32;
         private Button btnViewAcc;
         private Button btnEditAcc;
