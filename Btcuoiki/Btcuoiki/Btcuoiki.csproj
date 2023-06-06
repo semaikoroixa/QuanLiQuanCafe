@@ -9,11 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <Folder Include="DTO\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTO\" />
+    <PackageReference Include="NEST" Version="7.17.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
 </Project>

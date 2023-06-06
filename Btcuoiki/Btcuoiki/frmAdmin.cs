@@ -1,4 +1,5 @@
 ﻿using Btcuoiki.DAO;
+using Nest;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,19 +18,17 @@ namespace Btcuoiki
         public frmAdmin()
         {
             InitializeComponent();
-            
+
+            LoadAcountList();
         }
-        //void LoadAccountList()
-        //{
-        //    string query = " exec dbo.USP_GetAccountByUserName @userName";
-            
-        //    dgvAccount.DataSource = DataProvider.Instance.ExcuteQuery(query,new object[] {"Admin"});
-        //}
 
-   
+        void LoadAcountList()
+        {
+            string query = "exec dbo.USP_GetAccountByUserName @userName  ";
+            DataProvider provider = new DataProvider();
+            dgvAccount.DataSource = provider.Executequery(query,new object[] { "nguyenminhmanh", "dangcap" });
 
-
-
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
